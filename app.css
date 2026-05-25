@@ -41,6 +41,34 @@ body {
       flex-direction: column;
     }
 
+    .menu__subcontainer {
+      anchor-name: --submenu;
+      display: flex;
+      flex-direction: column;
+
+      & > a {
+        position: relative;
+
+        &::after {
+          content: '➤';
+          font-weight: bold;
+          position: absolute;
+          top: 0;
+          right: 0.5rem;
+        }
+      }
+
+      & [popover] {
+        border: 1px solid black;
+        width: 120px;
+        inset: unset;
+
+        top: anchor(self-start); /* === anchor(top) */
+        left: calc(anchor(self-end) - 1rem); /* === anchor(right) */
+        position-anchor: --submenu;
+      }
+    }
+
     a {
       flex: 1;
       text-decoration: none;
