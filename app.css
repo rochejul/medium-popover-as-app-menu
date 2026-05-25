@@ -42,9 +42,12 @@ body {
     }
 
     .menu__subcontainer {
-      anchor-name: --submenu;
       display: flex;
       flex-direction: column;
+
+      &.menu__subcontainer--active {
+        anchor-name: --submenu;
+      }
 
       & > a {
         position: relative;
