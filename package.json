@@ -1,0 +1,25 @@
+{
+  "name": "medium-popover-as-app-menu",
+  "version": "1.0.0",
+  "description": "Repository used to illustrate [the Medium article](https://medium.com/@rochejul/use-the-popover-api-to-create-a-menu-for-your-application-126576a8fc4c) showing how to use popover for a fancy menu for a button.",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "http-server --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rochejul/medium-popover-as-app-menu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rochejul/medium-popover-as-app-menu/issues"
+  },
+  "homepage": "https://github.com/rochejul/medium-popover-as-app-menu#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
